@@ -6,7 +6,7 @@ RUN apt-get update && \
     mkdir /backup
 
 ENV CRON_TIME="0 0 * * *" \
-    MYSQL_DB="--all-databases"
+    MYSQL_DB="mitambo-app"
 ADD run.sh /run.sh
 VOLUME ["/backup"]
 
